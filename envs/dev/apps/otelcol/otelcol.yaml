@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: obs-root-app
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+  name: obs-otelcol
+  namespace: default
 spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: default
-  project: default
+  project: obs
   source:
-    path: apps/
-    repoURL: https://github.com/Cleanbeach/obs-apps.git
+    path: xxxxxxxxxxxxxxxxxxxxxxxx
+    repoURL: xxxxxxxxxxxxxxxxxxxxx
     targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true  
+      selfHeal: true
+      allowEmpty: true

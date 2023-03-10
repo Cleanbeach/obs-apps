@@ -1,0 +1,7 @@
+apiVersion: v2
+name: root-obs
+version: 1.0.0
+description: Helm root-chart för att installera observerbarhet
+maintainers:
+- email: p.cleanbeach@gmail.com
+  name: sre
