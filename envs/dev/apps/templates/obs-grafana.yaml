@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: obs-otelcol
+  name: obs-grafana
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: envs/dev/apps/otelcol
+    path: ./grafana
     repoURL: https://github.com/Cleanbeach/obs-apps.git
     targetRevision: HEAD

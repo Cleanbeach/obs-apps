@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: envs/dev/apps/tempo
+    path: ./tempo
     repoURL: https://github.com/Cleanbeach/obs-apps.git
     targetRevision: HEAD
