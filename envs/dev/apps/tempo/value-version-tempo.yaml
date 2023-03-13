@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: obs-grafana-deployment
+  name: obs-tempo-deployment
 spec:
   template:
     spec:
