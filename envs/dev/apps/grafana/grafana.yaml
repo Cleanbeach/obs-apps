@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com/grafana/helm-charts.git
     targetRevision: HEAD
-    path: ./charts/grafana/
+    path: charts/grafana/
    
   # Destination cluster and namespace to deploy the application
   destination:
