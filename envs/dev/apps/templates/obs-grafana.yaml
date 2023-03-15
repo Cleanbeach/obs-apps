@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: grafana/
+    path: envs/dev/apps/grafana/
     repoURL: https://github.com/Cleanbeach/obs-apps.git
     targetRevision: HEAD
