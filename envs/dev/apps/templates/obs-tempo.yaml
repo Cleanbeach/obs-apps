@@ -1,16 +1,16 @@
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: obs-tempo
-#   namespace: default
-#   finalizers:
-#   - resources-finalizer.argocd.argoproj.io
-# spec:
-#   destination:
-#     namespace: default
-#     server: https://kubernetes.default.svc
-#   project: default
-#   source:
-#     path: envs/dev/apps/tempo/
-#     repoURL: https://github.com/Cleanbeach/obs-apps.git
-#     targetRevision: HEAD
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: obs-tempo
+  namespace: default
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: envs/dev/apps/tempo/
+    repoURL: https://github.com/Cleanbeach/obs-apps.git
+    targetRevision: HEAD
