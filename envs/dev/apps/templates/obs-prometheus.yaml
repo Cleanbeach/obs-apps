@@ -11,4 +11,4 @@ spec:
     chart: kube-prometheus-stack
 destination:
   server: https://kubernetes.default.svc
-  namespace: prometheus
+  namespace: default
