@@ -36,7 +36,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: obs
-  project: obs
+  project: default
   source:
     path: envs/dev/apps/
     # repoURL: https://github.com/arthurk/argocd-example-install.git
