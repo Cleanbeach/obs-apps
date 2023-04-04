@@ -1,6 +1,6 @@
-spec:
-  destination:
-    server: https://kubernetes.default.svc
-  source:
-    repoURL:  https://github.com/Cleanbeach/obs-apps.git
-    targetRevision: HEAD
+# spec:
+#   destination:
+#     server: https://kubernetes.default.svc
+#   source:
+#     repoURL:  https://github.com/Cleanbeach/obs-apps.git
+#     targetRevision: HEAD
