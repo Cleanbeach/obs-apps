@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: obs
+    namespace: argocd
   project: default
   source:
     path: envs/dev/bet-obs-stack/
