@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: grafana/
+    path: charts/grafana/
     repoURL: https://github.com/grafana/helm-charts/
     targetRevision: HEAD
 
