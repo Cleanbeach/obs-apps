@@ -1,3 +1,13 @@
+
+source:
+  helm:
+    valueFiles:
+    - values-grafana.yaml
+    - values-loki.yaml
+    - values-tempo.yaml
+    -
+
+
 # otelcol:
 #   targetRevision: 0.29.0 
 #   # 0.29.0 is the latest version of the otelcol chart
