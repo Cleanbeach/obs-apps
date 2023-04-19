@@ -17,7 +17,7 @@ spec:
     
     helm:
         valueFiles:
-        - $values envs/dev/apps/otelcol/otelcol-values.yaml
+        - $values /envs/dev/apps/otelcol/otelcol-values.yaml
         - repoURL: 'https://github.com/Cleanbeach/obs-apps.git'
           targetRevision: HEAD
           ref: values
