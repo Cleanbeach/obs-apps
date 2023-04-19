@@ -14,6 +14,9 @@ spec:
     path: charts/grafana/
     repoURL: https://github.com/grafana/helm-charts/
     targetRevision: HEAD
+    # här ska vi byta ut till att läsa mot values filen
+    # man skulle kunna tänka sig att fk har ett forkat ut till ett eget repo alla applikationer.
+    # och vi anger i HELM charten att vi vill läsa från det repo.
 
 # apiVersion: argoproj.io/v1alpha1
 # kind: Application
