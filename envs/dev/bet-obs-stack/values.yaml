@@ -1,12 +1,11 @@
 
-source:
-  helm:
-    valueFiles:
-    - values-grafana.yaml
-    - values-loki.yaml
-    - values-tempo.yaml
-    -
-
+# source:
+#   helm:
+#     valueFiles:
+#     - values-grafana.yaml
+#     - values-loki.yaml
+#     - values-tempo.yaml
+#     -
 
 # otelcol:
 #   targetRevision: 0.29.0 
