@@ -1,19 +1,19 @@
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: grafana
-#   namespace: default
-#   finalizers:
-#   - resources-finalizer.argocd.argoproj.io
-# spec:
-#   destination:
-#     namespace: default
-#     server: https://kubernetes.default.svc
-#   project: default
-#   source:
-#     path: envs/dev/apps/grafana/
-#     repoURL: https://github.com/Cleanbeach/obs-apps.git
-#     targetRevision: HEAD
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: grafana/
+    repoURL: https://github.com/grafana/helm-charts/
+    targetRevision: HEAD
 
 # apiVersion: argoproj.io/v1alpha1
 # kind: Application
