@@ -14,15 +14,14 @@ spec:
     path: charts/grafana/
     repoURL: https://github.com/grafana/helm-charts/
     targetRevision: HEAD
-    # här ska vi byta ut till att läsa mot values filen
-    # man skulle kunna tänka sig att fk har ett forkat ut till ett eget repo alla applikationer.
-    # och vi anger i HELM charten att vi vill läsa från det repo.
+    # kräver absolut path
     # helm:
-    #   # the chart repository/name/version
-    #   repoURL: https://github.com/Cleanbeach/obs-apps/tree/main/envs/dev/apps/grafana/templates
-    #   chart: ingress-nginx
-    #   # chartVersion: 4.0.3
-    #   # the following values files and other files are stored in the Git repository referenced above
     #   valueFiles:
-    #     - values-grafana.yaml
-    #     - value-version-grafana.yaml
+    #   - $values/apps/grafana/grafana-values.yaml
+    #   - $values/apps/grafana/grafana-value-version.yaml
+    #   - $values/apps/grafana/grafana-service.yaml
+    
+    
+    #   - repoURL: https://github.com/Cleanbeach/obs-apps.git
+    #   targetRevision: HEAD
+    #   ref: values
