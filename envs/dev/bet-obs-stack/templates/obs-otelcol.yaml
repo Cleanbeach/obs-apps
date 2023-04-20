@@ -13,13 +13,12 @@ spec:
   source:
     path: charts/opentelemetry-collector/
     repoURL: https://github.com/open-telemetry/opentelemetry-helm-charts.git
-    targetRevision: HEAD
-    
+    targetRevision: HEAD    
     helm:
-        valueFiles:
+      valueFiles:
         - $values /envs/dev/apps/otelcol/otelcol-values.yaml
-        - repoURL: 'https://github.com/Cleanbeach/obs-apps.git'
-          targetRevision: HEAD
-          ref: values
+      repoURL: 'https://github.com/Cleanbeach/obs-apps.git'
+      targetRevision: master
+      ref: values
       # - $values/apps/otelcol/otelcol-value-version.yaml
       # - $values/apps/otelcol/otelcol-service.yaml
