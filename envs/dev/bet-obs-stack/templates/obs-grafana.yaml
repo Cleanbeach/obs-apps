@@ -16,7 +16,7 @@ spec:
       targetRevision: HEAD
     - repoURL: https://github.com/Cleanbeach/obs-apps.git
       path: apps/grafana/
-      targetRevision: master
+      targetRevision: HEAD
       ref: values
     # helm:
     #     valueFiles:
