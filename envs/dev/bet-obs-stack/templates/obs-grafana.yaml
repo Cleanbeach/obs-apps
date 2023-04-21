@@ -15,7 +15,7 @@ spec:
       path: charts/grafana/
       targetRevision: HEAD
     - repoURL: https://github.com/Cleanbeach/obs-apps.git
-      path: dev/bet-obs-stack/apps/grafana/
+      path: envs/dev/bet-obs-stack/apps/grafana/
       targetRevision: HEAD
       ref: values
     # helm:
