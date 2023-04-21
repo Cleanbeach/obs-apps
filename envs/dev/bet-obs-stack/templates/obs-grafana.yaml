@@ -14,6 +14,19 @@ spec:
     path: charts/grafana/
     repoURL: https://github.com/grafana/helm-charts/
     targetRevision: HEAD
+    helm:
+        valueFiles:
+        - $values/apps/grafana/values.yaml
+        - $values/apps/grafana/datasources.yaml
+        - $values/apps/grafana/dashboards.yaml
+      # parameters:
+      #   # mode: "deployment"
+      #   - name: mode
+      #     value: "deployment"
+        - repoURL: https://github.com/Cleanbeach/obs-apps.git
+          path: apps/grafana/
+          targetRevision: master
+          ref: values
     # kräver absolut path
     # helm:
     #   valueFiles:
