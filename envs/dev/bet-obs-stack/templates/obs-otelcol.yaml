@@ -1,28 +1,28 @@
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: obs-otelcol
-#   namespace: argocd
-#   finalizers:
-#   - resources-finalizer.argocd.argoproj.io
-# spec:
-#   destination:
-#     namespace: default
-#     server: https://kubernetes.default.svc
-#   project: default
-#   source:
-#     path: charts/opentelemetry-collector/
-#     repoURL: https://github.com/open-telemetry/opentelemetry-helm-charts.git
-#     targetRevision: HEAD    
-#     helm:
-#       parameters:
-#         # mode: "deployment"
-#         - name: mode
-#           value: "deployment"
-      # valueFiles:
-      #   - $values /envs/dev/apps/otelcol/otelcol-values.yaml
-      # repoURL: 'https://github.com/Cleanbeach/obs-apps.git'
-      # targetRevision: master
-      # ref: values
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: obs-otelcol
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: charts/opentelemetry-collector/
+    repoURL: https://github.com/open-telemetry/opentelemetry-helm-charts.git
+    targetRevision: HEAD    
+    helm:
+      # parameters:
+      #   # mode: "deployment"
+      #   - name: mode
+      #     value: "deployment"
+      valueFiles:
+        - $values /apps/otelcol/otelcol-values.yaml
+      repoURL: 'https://github.com/Cleanbeach/obs-apps.git'
+      targetRevision: master
+      ref: values
       # # - $values/apps/otelcol/otelcol-value-version.yaml
       # # - $values/apps/otelcol/otelcol-service.yaml
