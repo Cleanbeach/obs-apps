@@ -1,0 +1,11 @@
+# ---
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: obs-tempo-deployment
+# spec:
+#   template:
+#     spec:
+#       containers:
+#       - name: obs-grafana
+#         image: docker.io/kostiscodefresh/xxxxxxxxx:1.0
