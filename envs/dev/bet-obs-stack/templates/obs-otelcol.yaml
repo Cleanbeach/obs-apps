@@ -20,7 +20,7 @@ spec:
     #      value: "deployment"
      helm:
         valueFiles:
-        - $values values.yaml
+        - $values envs/dev/bet-obs-stack/apps/otelcol/values.yaml
         # - $values/apps/otelcol/otelcol-value-version.yaml
         # - $values/apps/otelcol/otelcol-service.yaml     
    - repoURL: https://github.com/Cleanbeach/obs-apps.git
