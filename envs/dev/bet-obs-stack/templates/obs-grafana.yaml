@@ -10,10 +10,14 @@ spec:
     namespace: default
     server: https://kubernetes.default.svc
   project: default
-  source:
-    path: charts/grafana/
-    repoURL: https://github.com/grafana/helm-charts/
-    targetRevision: HEAD
+  sources:
+    - repoURL: https://github.com/grafana/helm-charts/
+      path: charts/grafana/
+      targetRevision: HEAD
+    - repoURL: https://github.com/Cleanbeach/obs-apps.git
+      path: apps/grafana/
+      targetRevision: master
+      ref: values
     # helm:
     #     valueFiles:
     #     - $values/apps/grafana/values.yaml
@@ -25,7 +29,4 @@ spec:
     #   #   # mode: "deployment"
     #   #   - name: mode
     #   #     value: "deployment"
-    #     - repoURL: https://github.com/Cleanbeach/obs-apps.git
-    #       path: apps/grafana/
-    #       targetRevision: master
-    #       ref: values
+        
