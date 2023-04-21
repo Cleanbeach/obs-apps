@@ -14,15 +14,15 @@ spec:
    - repoURL: https://github.com/open-telemetry/opentelemetry-helm-charts.git
      path: charts/opentelemetry-collector/ 
      targetRevision: HEAD
-    #  helm:
-    #     valueFiles:
-    #     - $values/apps/otelcol/values.yaml
-    #     # - $values/apps/otelcol/otelcol-value-version.yaml
-    #     # - $values/apps/otelcol/otelcol-service.yaml
      parameters:
         # mode: "deployment"
        - name: mode
          value: "deployment"
+    #  helm:
+    #     valueFiles:
+    #     - $values/apps/otelcol/values.yaml
+    #     # - $values/apps/otelcol/otelcol-value-version.yaml
+    #     # - $values/apps/otelcol/otelcol-service.yaml     
   #  - repoURL: https://github.com/Cleanbeach/obs-apps.git
   #    path: apps/otelcol/
   #    targetRevision: HEAD
