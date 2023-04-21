@@ -16,7 +16,7 @@ spec:
      targetRevision: HEAD
      helm:
         valueFiles:
-        - $values/apps/otelcol/otelcol-values.yaml
+        - $values/apps/otelcol/values.yaml
         # - $values/apps/otelcol/otelcol-value-version.yaml
         # - $values/apps/otelcol/otelcol-service.yaml
       # parameters:
