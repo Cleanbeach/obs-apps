@@ -15,8 +15,8 @@ spec:
      path: charts/opentelemetry-collector/ 
      targetRevision: HEAD
      parameters:
-       - name: mode
-         value: "deployment"
+      - name: mode
+        value: "deployment"
   #    helm:
   #       valueFiles:
   #       # - $values envs/dev/bet-obs-stack/apps/otelcol/values.yaml
