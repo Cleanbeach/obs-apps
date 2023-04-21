@@ -25,5 +25,5 @@ spec:
       #     value: "deployment"
    - repoURL: https://github.com/Cleanbeach/obs-apps.git
      path: apps/otelcol/
-     targetRevision: master
+     targetRevision: HEAD
      ref: values
