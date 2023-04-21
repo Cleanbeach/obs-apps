@@ -14,15 +14,15 @@
 #     path: charts/loki/
 #     repoURL: https://github.com/grafana/helm-charts/
 #     targetRevision: HEAD
-      helm:
-        valueFiles:
-        - $values/apps/loki/loki-values.yaml
-        - $values/apps/loki/persisten-volume-claim.yaml
-      # parameters:
-      #   # mode: "deployment"
-      #   - name: mode
-      #     value: "deployment"
-        - repoURL: https://github.com/Cleanbeach/obs-apps.git
-          path: apps/loki/
-          targetRevision: master
-          ref: values
+      # helm:
+      #   valueFiles:
+      #   - $values/apps/loki/loki-values.yaml
+      #   - $values/apps/loki/persisten-volume-claim.yaml
+      # # parameters:
+      # #   # mode: "deployment"
+      # #   - name: mode
+      # #     value: "deployment"
+      #   - repoURL: https://github.com/Cleanbeach/obs-apps.git
+      #     path: apps/loki/
+      #     targetRevision: master
+      #     ref: values
