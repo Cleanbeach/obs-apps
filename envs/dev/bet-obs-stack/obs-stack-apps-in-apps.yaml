@@ -6,7 +6,7 @@ metadata:
   spec:
     source:
       repoURL: 'https://github.com/cleanbeach/obs-apps.git'
-      path: envs/dev/bet-obs-stack
+      path: envs/dev/bet-obs-stack/argocd/applications
     destination:
       namespace: argocd
       server: 'https://kubernetes.default.svc'
